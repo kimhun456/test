@@ -15,6 +15,7 @@ pipeline {
     post {
         always {
             echo 'This will always run'
+            deleteDir()
         }
         success {
             echo 'This will run only if successful'
